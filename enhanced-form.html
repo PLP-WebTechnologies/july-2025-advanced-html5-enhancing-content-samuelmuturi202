@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Web Form Example</title>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Learning Platform</h1>
+        <p>Empowering education through technology and accessibility</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Educational Features</h2>
+            <p>We offer a comprehensive suite of tools to enhance the learning experience. Here are some of our key features:</p>
+            
+            <ul>
+                <li>Interactive video lessons with real-time quizzes</li>
+                <li>Personalized learning paths based on student performance</li>
+                <li>Collaborative study groups and discussion forums</li>
+                <li>Progress tracking and achievement badges</li>
+                <li>Mobile-friendly interface for learning on the go</li>
+            </ul>
+            
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Students collaborating on laptops in a modern classroom" 
+                 title="Students learning together">
+            
+            <p>Our platform is designed to support diverse learning styles and accommodate different educational needs.</p>
+        </section>
+
+        <section>
+            <h2>Course Comparison</h2>
+            <p>Compare our available courses to find the perfect fit for your learning goals:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>Level</th>
+                        <th>Price</th>
+                        <th>Certificate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development Fundamentals</td>
+                        <td>8 weeks</td>
+                        <td>Beginner</td>
+                        <td>$199</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced JavaScript</td>
+                        <td>10 weeks</td>
+                        <td>Intermediate</td>
+                        <td>$299</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Design Principles</td>
+                        <td>6 weeks</td>
+                        <td>Beginner</td>
+                        <td>$249</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Data Science Essentials</td>
+                        <td>12 weeks</td>
+                        <td>Intermediate</td>
+                        <td>$399</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile App Development</td>
+                        <td>14 weeks</td>
+                        <td>Advanced</td>
+                        <td>$499</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Student Testimonials</h2>
+            <p>Don't just take our word for it—here's what our students have to say:</p>
+            
+            <ol>
+                <li>"The interactive lessons made complex concepts easy to understand. I went from beginner to job-ready in just 4 months!" — Sarah J.</li>
+                <li>"The support from instructors was outstanding. They responded to questions within hours, not days." — Michael T.</li>
+                <li>"I appreciated the flexibility to learn at my own pace while maintaining my full-time job. The mobile app made studying during commutes possible." — Elena R.</li>
+                <li>"The career services team helped me optimize my portfolio and land my first developer position with a 30% salary increase." — David K.</li>
+            </ol>
+            
+            <img src="https://images.unsplash.com/photo-1522202176988-66aacc9e255b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Professional woman smiling while working on laptop" 
+                 title="Happy student using our platform">
+        </section>
+
+        <section>
+            <h2>Enroll in Our Program</h2>
+            <p>Complete the form below to register for one of our courses. We'll contact you with further details and payment options.</p>
+            
+            <form action="#" method="post" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div>
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" 
+                               id="fullName" 
+                               name="fullName" 
+                               placeholder="Enter your full name" 
+                               required 
+                               minlength="2"
+                               autocomplete="name">
+                    </div>
+                    
+                    <div>
+                        <label for="email">Email Address *</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               placeholder="your.name@example.com" 
+                               required 
+                               autocomplete="email">
+                    </div>
+                    
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" 
+                               id="phone" 
+                               name="phone" 
+                               placeholder="(555) 123-4567" 
+                               pattern="[0-9()\-+\s]+"
+                               autocomplete="tel">
+                        <small>Format: (555) 123-4567</small>
+                    </div>
+                    
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" 
+                               id="dob" 
+                               name="dob" 
+                               min="1900-01-01" 
+                               max="2010-12-31">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Course Selection</legend>
+                    
+                    <div>
+                        <label for="course">Preferred Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="">-- Select a course --</option>
+                            <option value="web-dev">Web Development Fundamentals</option>
+                            <option value="js-advanced">Advanced JavaScript</option>
+                            <option value="ui-ux">UI/UX Design Principles</option>
+                            <option value="data-science">Data Science Essentials</option>
+                            <option value="mobile-dev">Mobile App Development</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label>Experience Level *</label>
+                        <div>
+                            <input type="radio" id="beginner" name="experience" value="beginner" required>
+                            <label for="beginner">Beginner</label>
+                            
+                            <input type="radio" id="intermediate" name="experience" value="intermediate">
+                            <label for="intermediate">Intermediate</label>
+                            
+                            <input type="radio" id="advanced" name="experience" value="advanced">
+                            <label for="advanced">Advanced</label>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="availability">Preferred Study Time</label>
+                        <select id="availability" name="availability" multiple size="3">
+                            <option value="morning">Morning (6AM-12PM)</option>
+                            <option value="afternoon">Afternoon (12PM-6PM)</option>
+                            <option value="evening">Evening (6PM-10PM)</option>
+                        </select>
+                        <small>Hold Ctrl (or Cmd on Mac) to select multiple options</small>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div>
+                        <label for="education">Highest Level of Education</label>
+                        <input type="text" 
+                               id="education" 
+                               name="education" 
+                               list="educationOptions"
+                               placeholder="e.g., Bachelor's Degree">
+                        <datalist id="educationOptions">
+                            <option value="High School Diploma">
+                            <option value="Associate's Degree">
+                            <option value="Bachelor's Degree">
+                            <option value="Master's Degree">
+                            <option value="PhD">
+                        </datalist>
+                    </div>
+                    
+                    <div>
+                        <label for="referral">How Did You Hear About Us?</label>
+                        <input type="text" 
+                               id="referral" 
+                               name="referral" 
+                               placeholder="e.g., Social media, Friend, Search engine">
+                    </div>
+                    
+                    <div>
+                        <label for="comments">Additional Comments</label>
+                        <textarea id="comments" 
+                                  name="comments" 
+                                  rows="4" 
+                                  placeholder="Tell us about your goals, questions, or anything else you'd like us to know"
+                                  minlength="10"
+                                  maxlength="500"></textarea>
+                        <small>Please limit to 500 characters</small>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Subscribe to our monthly newsletter with tips and updates</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" id="tos" name="tos" required>
+                        <label for="tos">I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Confirmation</legend>
+                    
+                    <div>
+                        <label for="security">Security Check</label>
+                        <input type="text" 
+                               id="security" 
+                               name="security" 
+                               placeholder="Enter the word 'LEARN'" 
+                               pattern="LEARN|Learn|learn" 
+                               title="Please enter 'LEARN'" 
+                               required>
+                    </div>
+                    
+                    <div>
+                        <label for="confirmationCode">Confirmation Code</label>
+                        <input type="text" 
+                               id="confirmationCode" 
+                               name="confirmationCode" 
+                               value="ENROLL2023" 
+                               readonly 
+                               title="This code will be used to verify your registration">
+                    </div>
+                </fieldset>
+                
+                <button type="submit">Submit Registration</button>
+                <p><small>Fields marked with * are required.</small></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Interactive Learning Platform. All rights reserved.</p>
+        <p>Contact us: info@learningplatform.com | (555) 123-LEARN</p>
+    </footer>
+
+</body>
+</html>
